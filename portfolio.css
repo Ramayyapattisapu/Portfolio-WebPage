@@ -1,50 +1,88 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin: 100px;
-    padding: 10px;
+    margin: 30px;
+    padding: 50px;
     box-sizing: border-box;
+    font-size: 16px;
+    text-wrap: wrap;
 }
 
 .profile-picture {
-    text-align: center;
     margin-top: 1px;
+    font-weight: 800;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .profile-picture img {
-    width: 500px; 
-    height: 500px; 
-    border-radius: 70%; 
-    border: 5px solid #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 40%;
+    border: 1px solid #fff;
+    margin-bottom: 15px;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
+.profile-picture h1 {
+    color: black;
+    font-weight: 800;
+    font-family: sans-serif;
+    padding-left: 20px ;
+}
+
+.location,
+.email,
+.phone,
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.location i,
+.email i,
+.phone i,
+.social i {
+    margin-right: 20px;
+    color:  #ff3333;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+    color: black;
     padding: 1em 0;
-}
-
-header h1 {
-    margin: 0;
-}
-
-header p {
-    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-items: auto;
 }
 
 .about-me,
-.work-experience,
-education,
-.projects,
-skills {
-    padding: 2em 0;
+.work-experience {
+    overflow: hidden;
+    padding: 1em 0;
 }
+
+.container {
+    margin-left: 20px;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+p {
+    margin-top: 5px;
+}
+
+.date {
+    float: right;
+    color: rgb(156, 139, 139);
+}
+
+/* .education,
+.projects,
+.skills {
+    padding: 1em 0;
+} */
 
 ul {
     list-style: none;
@@ -53,17 +91,23 @@ ul {
 
 .project {
     margin-bottom: 1.5em;
+    align-items: center;
 }
 
 .project a {
-    display: inline-block;
-    margin-top: 0.1em;
+    margin-top: 1em;
+    align-items: center;
+    display: flex;
 }
 
 .project a img {
     width: 30px;
     height: auto;
     margin-right: 0.5em;
+    align-items: center;
+    display: flex; 
+    align-items: center;
+    text-align: center;
 }
 
 .line {
@@ -71,14 +115,11 @@ ul {
     width: 100%;
     background-color: #ccc;
     margin: 1em auto;
-    text-align: center;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    color: black;
     text-align: center;
     padding: 1em 0;
-    bottom: 0;
     width: 100%;
 }
